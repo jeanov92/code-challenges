@@ -5,7 +5,7 @@ import org.junit.jupiter.api.Test;
 import java.util.Arrays;
 import java.util.List;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 class BrakingTheRecordsTest {
 
@@ -17,9 +17,10 @@ class BrakingTheRecordsTest {
         assertEquals(2, output.get(0));
         assertEquals(4, output.get(1));
     }
+
     @Test
     void breakingRecords2() {
-        List<Integer> output = BrakingTheRecords.breakingRecords(Arrays.asList(3, 4, 21, 36, 10, 28 ,35, 5, 24, 42));
+        List<Integer> output = BrakingTheRecords.breakingRecords(Arrays.asList(3, 4, 21, 36, 10, 28, 35, 5, 24, 42));
 
         assertEquals(2, output.size());
         assertEquals(4, output.get(0));
